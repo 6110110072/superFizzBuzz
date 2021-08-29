@@ -1,4 +1,3 @@
-
 def superFizzBuzzFunction(n):
     if(n % 9 == 0 and n % 25 == 0):
         FizzBuzzPrinter("FizzFizzBuzzBuzz")
@@ -22,21 +21,26 @@ def superFizzBuzzFunction(n):
         FizzBuzzPrinter("NoFizzBuzz")
         return "NoFizzBuzz"
 
+
+
+def check(n): # pragma: no cover
+    if(n >= 1 and n <= 10000): # pragma: no cover
+        return True # pragma: no cover
+    return False # pragma: no cover
+
+
 def FizzBuzzPrinter(str):
     print(str)
 
-def check(n):
-    if(n > 1 and n <= 10000):
-        return True
-    return False
+
 
 
 def main():
-    n = int(input("Please enter number (1 - 10,000) : "))
-    if(check(n)):
-        superFizzBuzzFunction(n)
-    else:
-        print("Please enter number in range (1 - 10,000) !!")
+    n = int(input("Please enter number (1 - 10,000) : ")) # pragma: no cover
+    if(check(n)): # pragma: no cover
+        superFizzBuzzFunction(n) # pragma: no cover
+    else: # pragma: no cover
+        print("Please enter number in range (1 - 10,000) !!") # pragma: no cover
 
 if __name__ == "__main__":
-    main()
+    main() # pragma: no cover

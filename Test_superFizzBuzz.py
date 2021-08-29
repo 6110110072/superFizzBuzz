@@ -1,6 +1,6 @@
 import superFizzBuzz
 import unittest
-class testCountCamelCase(unittest.TestCase):
+class Test_superFizzBuzz(unittest.TestCase):
     def test_give_225_should_be_FizzFizzBuzzBuzz(self):
         self.assertEqual(superFizzBuzz.superFizzBuzzFunction(225),"FizzFizzBuzzBuzz",'output should be FizzFizzBuzzBuzz')
     def test_give_450_should_be_FizzFizzBuzzBuzz(self):
